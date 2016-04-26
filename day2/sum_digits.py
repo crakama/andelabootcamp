@@ -13,10 +13,11 @@ def sum_digits(A):
 
 			lst.append(i % base)
 
-			"""lst.append() function does a modulo, 45 modulo base is 5, 5 is appended to the new list
-               float (\//)
+	"""lst.append() function does a modulo, 45 modulo base is 5, 5 is appended to the new list
+               float (//)
+               I is set to the value of i float base 
 
-			"""
+	"""
 
 			i = i // base
 	
