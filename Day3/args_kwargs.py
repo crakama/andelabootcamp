@@ -8,11 +8,11 @@ def hello(name, age, class_=''):
 
 
 people = [
-            ("Jane", 23, 'High'),
-            ("Joe", 25, 'Low'),
-            ("Brian", 60),
-            ("Betty", 45)
-            ]
+    ("Jane", 23, 'High'),
+    ("Joe", 25, 'Low'),
+    ("Brian", 60),
+    ("Betty", 45)
+]
 
 # for name, age in people:
 #     print hello(anme, age)
@@ -43,9 +43,10 @@ a = [10, 40, 60]
 print super_sum(*a)
 print super_sum(10, 20)
 
-def hello_again(**kwargs):
-    return "I am {}, and I'm {}".format(kwargs['name'], kwargs['age'])
 
+def hello_again(**kwargs):
+    """   unpacks the list and passes the values to the format() method"""
+    return "I am {}, and I'm {}".format(kwargs['name'], kwargs['age'])
 
 print hello_again(name='Joe', age=20)
 print hello_again(age=20, name='Jane')
@@ -56,10 +57,10 @@ print hello_again(**joe)
 print hello_again(name='Joe', age=98)
 
 other_people = [
-        {'name': 'Joe', 'age': 98},
-        {'name': 'Jane', 'age': 60},
-        {'name': 'Trump', 'age': 23}
-    ]
+    {'name': 'Joe', 'age': 98},
+    {'name': 'Jane', 'age': 60},
+    {'name': 'Trump', 'age': 23}
+]
 
 for person in other_people:
     hello_again(**person)

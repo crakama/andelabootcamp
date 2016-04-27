@@ -15,14 +15,13 @@ print p.age
 print p2.people_count
 print p.say_hello()
 
-a = [('jane', 23),('Cate',43),('jee', 52)]
+a = [('jane', 23), ('Cate', 43), ('jee', 52)]
 for name, age in a:
-	person = Person(name,age)
-	b.append(person)
-	print b
+    person = Person(name, age)
+    b.append(person)
+    print b
 
 k = Kenyan('Anita Wanguru', 20)
 # k.probe(True)
 print "Is {} corrupt? {}".format(k.name, k.is_corrupt())
 print k.say_hello()
-		
