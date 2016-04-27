@@ -22,6 +22,8 @@ x: 5, y:10
 for k, v in b:
 
 	print "X: {}, Y: {}".format(k,v)
+
+
 	
 
 
