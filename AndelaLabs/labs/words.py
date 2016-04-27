@@ -8,4 +8,4 @@ def words(phrase):
             dict_ += 1
         else:
             dict_ = 1
-    return dict_
+    return dict_[r]
