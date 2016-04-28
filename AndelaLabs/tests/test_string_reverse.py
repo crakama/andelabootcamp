@@ -1,4 +1,5 @@
 class ReverseStringTest(TestCase):
+
     """docstring for ReverseStringTest"""
 
     def test_empty_string(self):

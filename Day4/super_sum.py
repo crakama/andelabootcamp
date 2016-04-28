@@ -8,13 +8,17 @@ def super_sum(*args):
     super_sum([2],[3],[4]) ===> 9
 
     """
-    if not args:
+    total = 0
+        if args:
+            for x in args:
+                # x is now ([1, 2, 3])
+                if type(x) == list:
+                    total += sum(x)
+                elif type(x) == str:
+                    return 0
+                else:
+                    total += x
 
-        # return "Please Enter Numbers"
+            return total
         return 0
-    else:
 
-        total = 0
-        for x in args:
-            total += x
-        return total

@@ -1,11 +1,9 @@
 """ Test suite for super_sum  """
-
 from unittest import TestCase
 from super_sum import super_sum
 
 
 class TestSuperSum(TestCase):
-
     """  Test Case for super_sum function """
 
     def test_empty_input(self):
@@ -24,6 +22,3 @@ class TestSuperSum(TestCase):
 
     def test_sum_of_list_of_tuple(self):
         self.assertEqual(super_sum([2], [3], [4]), 9)
-
-    def test_sum_of_string(self):
-        self.assertEqual(super_sum(), "string")
